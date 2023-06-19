@@ -1,2 +1,61 @@
-# SIGA
-Self-supervised Implicit Glyph Attention for Text Recognition
+# Self-Supervised Implicit Glyph Attention for Text Recognition 
+This is the code of "Self-Supervised Implicit Glyph Attention for Text Recognition". 
+For more details, please refer to our [CVPR paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_Self-Supervised_Implicit_Glyph_Attention_for_Text_Recognition_CVPR_2023_paper.pdf) 
+or [Poster](SIGA_poster.pdf).
+
+[comment]: <> (and testing speed can reach 6.99 fps with 768px &#40;tested in single GPU of Tesla V100&#41;)
+## Environments
+```bash
+# Ubuntu 16.04 Cuda 10
+conda create -n SIGA python==3.7.0
+source activate SIGA
+pip install torch==1.5.1+cu101 torchvision==0.6.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+pip install tensorboard==1.15.0
+pip install tensorboardX==2.2
+pip install opencv-python
+pip install Pillow LMDB nltk six natsort scipy
+# Ubuntu 16.04 Cuda 11
+conda create -n SIGA python==3.7.0
+source activate SIGA
+pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
+pip install tensorboard==2.11.2
+pip install tensorboardX==2.2
+pip install opencv-python
+pip install Pillow LMDB nltk six natsort scipy
+# if you meet bug about setuptools
+# pip uninstall setuptools
+# pip install setuptools==58.0.4
+```
+
+## Highlights
+- **Dataset link:**
+  - [Synth data](https://github.com/FangShancheng/ABINet/README.md)
+  - [MPSC]()
+  - [ArbitText]()
+
+## Training 
+```bash
+python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name TRBA --exp_name SIGA --Aug --batch_size 512 --num_iter 150000 --select_data synth --benchmark_all_eval --train_data /xxx/dataset/data_lmdb/training/label/Synth/ --eval_data /xxx/dataset/data_lmdb/evaluation/ --mask_path /xxx/dataset/data_lmdb/Mask --workers 24
+```
+
+## Test and eval
+```bash
+python test.py --eval_data /xxx/xxx
+```
+
+## Citation
+```bash
+If you find our method useful for your reserach, please cite
+
+@inproceedings{guan2023self,
+  title={Self-Supervised Implicit Glyph Attention for Text Recognition},
+  author={Guan, Tongkun and Gu, Chaochen and Tu, Jingzheng and Yang, Xue and Feng, Qi and Zhao, Yudi and Shen, Wei},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={15285--15294},
+  year={2023}
+}
+```
+## License
+```bash
+- This code are only free for academic research purposes and licensed under the 2-clause BSD License - see the LICENSE file for details.
+```
