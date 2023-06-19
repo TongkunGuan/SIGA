@@ -26,6 +26,18 @@ pip install Pillow LMDB nltk six natsort scipy
 # pip uninstall setuptools
 # pip install setuptools==58.0.4
 ```
+## Data
+```bash
+-- root_path
+    --training
+        --MJ
+        --ST
+    --validation
+    --evaluation
+        --SVT
+        --IIIK
+        --...
+```
 
 ## Highlights
 - **Dataset link:**
