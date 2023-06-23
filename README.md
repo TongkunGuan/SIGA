@@ -6,7 +6,7 @@ or [Poster](SIGA_poster.pdf).
 [comment]: <> (and testing speed can reach 6.99 fps with 768px &#40;tested in single GPU of Tesla V100&#41;)
 ## Environments
 ```bash
-# Ubuntu 16.04 Cuda 10
+# V100 Ubuntu 16.04 Cuda 10
 conda create -n SIGA python==3.7.0
 source activate SIGA
 pip install torch==1.5.1+cu101 torchvision==0.6.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
@@ -14,7 +14,7 @@ pip install tensorboard==1.15.0
 pip install tensorboardX==2.2
 pip install opencv-python
 pip install Pillow LMDB nltk six natsort scipy
-# Ubuntu 16.04 Cuda 11
+# 3090 Ubuntu 16.04 Cuda 11
 conda create -n SIGA python==3.7.0
 source activate SIGA
 pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
@@ -45,7 +45,7 @@ pip install Pillow LMDB nltk six natsort scipy
   - [MPSC](https://drive.google.com/file/d/1awBUrj30s5VLxk-B0EFkieeIcNrETVTX/view?usp=drive_link)
   - [ArbitText](https://drive.google.com/file/d/1D-pN5u0KOm79Ot51jh-9_rEdSt9oK_vK/view?usp=drive_link)
 - **weight link:**
-  - [SIGA_S](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link)
+  - [SIGA<sub>S</sub>](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link)
   
 ## Training 
 ```bash
