@@ -1,6 +1,6 @@
 # Self-Supervised Implicit Glyph Attention for Text Recognition 
 This is the code of "Self-Supervised Implicit Glyph Attention for Text Recognition". 
-For more details, please refer to our [CVPR paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_Self-Supervised_Implicit_Glyph_Attention_for_Text_Recognition_CVPR_2023_paper.pdf) 
+For more details, please refer to our [CVPR2023 paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_Self-Supervised_Implicit_Glyph_Attention_for_Text_Recognition_CVPR_2023_paper.pdf) 
 or [Poster](SIGA_poster.pdf).
 
 [comment]: <> (and testing speed can reach 6.99 fps with 768px &#40;tested in single GPU of Tesla V100&#41;)
