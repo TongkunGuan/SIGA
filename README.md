@@ -45,7 +45,7 @@ pip install Pillow LMDB nltk six natsort scipy
   - [MPSC](https://drive.google.com/file/d/1awBUrj30s5VLxk-B0EFkieeIcNrETVTX/view?usp=drive_link)
   - [ArbitText](https://drive.google.com/file/d/1D-pN5u0KOm79Ot51jh-9_rEdSt9oK_vK/view?usp=drive_link)
 - **weight link:**
-  - [SIGA<sub>S</sub>](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link)
+  - [SIGA<sub>S</sub>](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link) The model is trained on V100 platform.
   
 ## Training 
 ```bash
