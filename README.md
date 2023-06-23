@@ -44,7 +44,9 @@ pip install Pillow LMDB nltk six natsort scipy
   - [Synth data](https://github.com/FangShancheng/ABINet/README.md)
   - [MPSC](https://drive.google.com/file/d/1awBUrj30s5VLxk-B0EFkieeIcNrETVTX/view?usp=drive_link)
   - [ArbitText](https://drive.google.com/file/d/1D-pN5u0KOm79Ot51jh-9_rEdSt9oK_vK/view?usp=drive_link)
-
+- **weight link:**
+  - [SIGA_S](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link)
+  
 ## Training 
 ```bash
 python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name TRBA --exp_name SIGA --Aug --batch_size 512 --num_iter 150000 --select_data synth --benchmark_all_eval --train_data /xxx/dataset/data_lmdb/training/label/Synth/ --eval_data /xxx/dataset/data_lmdb/evaluation/ --mask_path /xxx/dataset/data_lmdb/Mask --workers 24
