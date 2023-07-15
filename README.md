@@ -4,12 +4,8 @@ For more details, please refer to our [CVPR2023 paper](https://openaccess.thecvf
 or [Poster](SIGA_poster.pdf).
 
 ## Model architecture 
-![examples1](graph/Essential difference.png)
-![examples2](graph/Network.png)
-
-## Visualization
-![examples1](graph/Essential difference.png)
-![examples2](graph/Network.png)
+![examples](graph/Essentialdifference.png)
+![examples](graph/Network.png)
 
 ## Environments
 ```bash
@@ -70,6 +66,9 @@ python test.py --eval_data /xxx/xxx --select_data xxx
 - [ ] Release SIGA_S, SIGA_T code
 - [ ] Refactor and clean code
 
+## Visualization
+![examples1](graph/Essential difference.png)
+![examples2](graph/Network.png)
 
 ## Citation
 ```bash
