@@ -1,9 +1,8 @@
-# Self-Supervised Implicit Glyph Attention for Text Recognition 
+# Self-Supervised Implicit Glyph Attention for Text Recognition (CVPR2023)
 This is the code of "Self-Supervised Implicit Glyph Attention for Text Recognition". 
 For more details, please refer to our [CVPR2023 paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_Self-Supervised_Implicit_Glyph_Attention_for_Text_Recognition_CVPR_2023_paper.pdf) 
 or [Poster](SIGA_poster.pdf).
 
-[comment]: <> (and testing speed can reach 6.99 fps with 768px &#40;tested in single GPU of Tesla V100&#41;)
 ## Environments
 ```bash
 # V100 Ubuntu 16.04 Cuda 10
@@ -45,7 +44,7 @@ pip install Pillow LMDB nltk six natsort scipy
   - [MPSC](https://drive.google.com/file/d/1awBUrj30s5VLxk-B0EFkieeIcNrETVTX/view?usp=drive_link)
   - [ArbitText](https://drive.google.com/file/d/1D-pN5u0KOm79Ot51jh-9_rEdSt9oK_vK/view?usp=drive_link)
 - **weight link:**
-  - [SIGA<sub>R</sub>](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link) The model is trained on V100 platform.
+  - [SIGA<sub>R</sub>](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link) *The model is trained on V100 platform*.
   
 ## Training 
 ```bash

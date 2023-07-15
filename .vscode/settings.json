@@ -1,0 +1,193 @@
+{
+    "python.pythonPath": "C:/Software/Anaconda/python.exe",
+    "window.zoomLevel": 0,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex->bib->pdflatex->pdflatex",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xe->bibtex->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xe->biber->xe->xe->xe",
+            "tools": [
+                "xelatex",
+                "biber",
+                "xelatex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+          "name": "texify",  //放在最前面为默认编译方案, 适用于MikTex
+          "tools": [
+            "texify"
+          ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            // tex编译工具和命令
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "texify",
+            "command": "texify",
+            "args": [
+              "--synctex",
+              "--pdf",
+              "--tex-option=\"-interaction=nonstopmode\"",
+              "--tex-option=\"-file-line-error\"",
+              "%DOC%.tex"
+            ]
+          },
+        {
+             // bib编译工具和命令
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            // bib编译工具和命令
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    //"latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer": {
+        "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+        "args": [
+        "%PDF%"
+        ]
+    },
+    "latex-workshop.view.pdf.external.synctex": {
+        "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+        "args": [
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "-reuse-instance",
+        "-inverse-search",
+        "C:/Software/Microsoft VS Code/Code.exe C:/Software/Microsoft VS Code/resources/app/out/cli.js -r -g %f:%l",
+        "%PDF%"
+        ]
+    },
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Default Light+",
+    "extensions.ignoreRecommendations": true,
+    "latex-workshop.message.update.show": false,
+    "launch": {
+    
+        
+
+        "configurations": [],
+        "compounds": []
+    }
+}
+
+// The configuration of Haotian Wang
+// "latex-workshop.latex.tools": [
+//     {
+//         "name": "pdflatex",
+//         "command": "pdflatex",
+//         "args": [
+//             "-synctex=1",
+//             "-interaction=nonstopmode",
+//             "-file-line-error",
+//             "-shell-escape",
+//             "%DOC%"
+//         ]
+//     },
+//     {
+//         "name": "xelatex",
+//         "command": "xelatex",
+//         "args": [
+//             "-synctex=1",
+//             "-interaction=nonstopmode",
+//             "-file-line-error",
+//             "-shell-escape",
+//             "%DOC%"
+//         ]
+//     },
+//     {
+//         "name": "bibtex",
+//         "command": "bibtex",
+//         "args": ["%DOCFILE%"]
+//     }
+// ],
+// "latex-workshop.latex.recipes": [
+//     {
+//         "name": "xelatex",
+//         // 编译包含bibtex的工程需要4步：
+//         // pdflatex->bibtex->pdflatex->pdflatex
+//         "tools": [
+//             "xelatex",
+//             "bibtex",
+//             "xelatex",
+//             "xelatex"
+//         ]
+//     }
+//     /*
+//     {
+//         "name": "xelatex",
+//         "tools": [
+//             "xelatex"
+//         ]
+//     }
+//     */
+// ],
+// "latex-workshop.view.pdf.viewer": "external",
+// //"latex-workshop.view.pdf.viewer": "tab",
+// "latex-workshop.view.pdf.external.viewer": {
+//     "command": "C:\\Progra~1\\SumatraPDF\\SumatraPDF.exe",
+//     "args": [
+//         "%PDF%"
+//     ]
+// },
