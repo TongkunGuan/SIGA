@@ -4,8 +4,12 @@ For more details, please refer to our [CVPR2023 paper](https://openaccess.thecvf
 or [Poster](SIGA_poster.pdf).
 
 ## Model architecture 
-![examples1](graph/Essential difference.pdf)
-![examples2](graph/Network.pdf)
+![examples1](graph/Essential difference.png)
+![examples2](graph/Network.png)
+
+## Visualization
+![examples1](graph/Essential difference.png)
+![examples2](graph/Network.png)
 
 ## Environments
 ```bash
@@ -46,7 +50,9 @@ pip install Pillow LMDB nltk six natsort scipy
 - **Dataset link:**
   - [Synth data and benchmark](https://github.com/FangShancheng/ABINet/README.md)
   - [MPSC](https://drive.google.com/file/d/1awBUrj30s5VLxk-B0EFkieeIcNrETVTX/view?usp=drive_link)
+    ![examples](graph/MPSC.png)
   - [ArbitText](https://drive.google.com/file/d/1D-pN5u0KOm79Ot51jh-9_rEdSt9oK_vK/view?usp=drive_link)
+    ![examples](graph/ArbitText.png)
 - **weight link:**
   - [SIGA<sub>R</sub>](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link) *The model is trained on V100 platform*.
   
