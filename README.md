@@ -3,8 +3,10 @@ This is the code of "Self-Supervised Implicit Glyph Attention for Text Recogniti
 For more details, please refer to our [CVPR2023 paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_Self-Supervised_Implicit_Glyph_Attention_for_Text_Recognition_CVPR_2023_paper.pdf) 
 or [Poster](SIGA_poster.pdf).
 
-## Model architecture 
+## Pipeline 
 ![examples](graph/Essentialdifference.png)
+
+## Model architecture
 ![examples](graph/Network.png)
 
 ## Environments
