@@ -67,8 +67,11 @@ python test.py --eval_data /xxx/xxx --select_data xxx
 - [ ] Refactor and clean code
 
 ## Visualization
-![examples1](graph/Essential difference.png)
-![examples2](graph/Network.png)
+![Pipeline](graph/pipeline.png)
+![examples1](graph/h.png)
+![examples1](graph/r.png)
+![examples1](graph/c.png)
+![examples1](graph/b.png)
 
 ## Citation
 ```bash
