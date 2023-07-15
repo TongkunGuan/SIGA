@@ -64,16 +64,16 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 t
 python test.py --eval_data /xxx/xxx --select_data xxx
 ```
 
-### TODO
-- [ ] Release SIGA_S, SIGA_T code
-- [ ] Refactor and clean code
-
 ## Visualization
 ![Pipeline](graph/pipeline.png)
 ![examples1](graph/h.png)
 ![examples1](graph/r.png)
 ![examples1](graph/c.png)
 ![examples1](graph/b.png)
+
+### TODO
+- [ ] Release SIGA_S, SIGA_T code
+- [ ] Refactor and clean code
 
 ## Citation
 ```bash
