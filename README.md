@@ -49,16 +49,16 @@ pip install Pillow LMDB nltk six natsort scipy
   
 ## Training 
 ```bash
-python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name TRBA --exp_name SIGA --Aug --batch_size 512 --num_iter 150000 --select_data synth --benchmark_all_eval --train_data /xxx/dataset/data_lmdb/training/label/Synth/ --eval_data /xxx/dataset/data_lmdb/evaluation/ --mask_path /xxx/dataset/data_lmdb/Mask --workers 24
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name TRBA --exp_name SIGA --Aug --batch_size 512 --num_iter 150000 --select_data synth --benchmark_all_eval --train_data /xxx/dataset/data_lmdb/training/label/Synth/ --eval_data /xxx/dataset/data_lmdb/evaluation/ --mask_path /xxx/dataset/data_lmdb/Mask(optional) --workers 12
 ```
 
 ## Test and eval
 ```bash
-python test.py --eval_data /xxx/xxx
+python test.py --eval_data /xxx/xxx --select_data xxx
 ```
 
 ### TODO
-- [ ] Release SIGA_R, SIGA_S, SIGA_T code
+- [ ] Release SIGA_S, SIGA_T code
 - [ ] Refactor and clean code
 
 
