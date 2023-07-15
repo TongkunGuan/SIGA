@@ -57,6 +57,11 @@ python -m torch.distributed.launch --nproc_per_node=2 train.py --model_name TRBA
 python test.py --eval_data /xxx/xxx
 ```
 
+### TODO
+- [ ] Release SIGA_R, SIGA_S, SIGA_T code
+- [ ] Refactor and clean code
+
+
 ## Citation
 ```bash
 If you find our method useful for your reserach, please cite
