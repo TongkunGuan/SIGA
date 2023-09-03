@@ -80,7 +80,7 @@ python test.py --eval_data /xxx/xxx --select_data xxx
 ![examples1](graph/b.png)
 
 ### TODO
-- [ ] Release SIGA_S, SIGA_T code
+- [ ] Release SIGA_T code
 - [ ] Refactor and clean code
 
 ## Citation
