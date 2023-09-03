@@ -53,6 +53,15 @@ pip install Pillow LMDB nltk six natsort scipy
     ![examples](graph/ArbitText.png)
 - **weight link:**
   - [SIGA<sub>R</sub>](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link) *The model is trained on V100 platform*.
+
+## Highlights
+- **Mask preparation:**
+  - optional, K-means results (please refer to [CCD](https://github.com/TongkunGuan/CCD/tree/main/mask_create))
+```bash
+cd ./mask_create
+run generate_mask.py #parallelly process mask --> lmdb file
+run merge.py #merge multiple lmdb files into single file
+```
   
 ## Training 
 ```bash
