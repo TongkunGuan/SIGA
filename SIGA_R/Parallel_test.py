@@ -92,7 +92,7 @@ class validate(nn.Module):
         preds_str = converter.decode(preds_index.data)
         return preds_str
 
-    def forward(self, model, evaluation_loader, converter, converter_FC, opt, tqdm_position=1):
+    def forward(self, model, evaluation_loader, converter, opt, tqdm_position=1):
         """ validation or evaluation """
         length_of_data = 0
         Init = init()
@@ -127,7 +127,7 @@ class benchmark_all_eval(nn.Module):
         self.dict = {'Share_pred': 0.0, 'language': 0.0, 'final': 0.0}
         self.method = ['Share_pred', 'language', 'final']
 
-    def forward(self, model, converter, converter_FC, opt, iteration, calculate_infer_time=False):
+    def forward(self, model, converter, opt, iteration, calculate_infer_time=False):
         """ evaluation with 10 benchmark evaluation datasets """
         if opt.eval_type == "benchmark":
             """evaluation with 6 benchmark evaluation datasets"""
@@ -168,7 +168,7 @@ class benchmark_all_eval(nn.Module):
                 num_workers=int(opt.workers),
                 collate_fn=AlignCollate_evaluation, pin_memory=True)
 
-            result_dict, length_of_data = self.validation(model, evaluation_loader, converter, converter_FC, opt,
+            result_dict, length_of_data = self.validation(model, evaluation_loader, converter, opt,
                                                           tqdm_position=0)
             total_evaluation_data_number += len(eval_data)
             all_dataset_length.append(length_of_data)

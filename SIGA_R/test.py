@@ -221,19 +221,3 @@ if __name__ == "__main__":
     else:
         opt.CUDA_VISIBLE_DEVICES = 0  # for convenience
     test(opt)
-
-#SIGA_R
-#COCOText 63.2
-#CTW 76.8
-#TotalText 80.5
-#HOST 56.2
-#WOST 75.6
-#WordArT 68.6(1511) 69.9(1482)
-
-#SIGA_T
-#COCOText 62.0
-#CTW 79.3
-#TotalText 82.2
-#HOST 77.2
-#WOST 85.1
-#WordArT 73.7(1511) 74.9(1482)
