@@ -1,7 +1,11 @@
 # Self-Supervised Implicit Glyph Attention for Text Recognition (CVPR2023)
-This is the code of "Self-Supervised Implicit Glyph Attention for Text Recognition". 
+This is the official code of "Self-Supervised Implicit Glyph Attention for Text Recognition". 
 For more details, please refer to our [CVPR2023 paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_Self-Supervised_Implicit_Glyph_Attention_for_Text_Recognition_CVPR_2023_paper.pdf) 
 or [Poster](SIGA_poster.pdf) or [中文解读](https://www.techbeat.net/article-info?id=5152).
+
+We have some other works on scene text recognition:
+- Self-supervised Character-to-Character Distillation for Text Recognition（CCD, ICCV23）
+[Paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Guan_Self-Supervised_Character-to-Character_Distillation_for_Text_Recognition_ICCV_2023_paper.pdf) and [Code](https://github.com/TongkunGuan/CCD)
 
 If you have any questions please contact me by email (gtk0615@sjtu.edu.cn).
 
