@@ -3,6 +3,8 @@ This is the code of "Self-Supervised Implicit Glyph Attention for Text Recogniti
 For more details, please refer to our [CVPR2023 paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_Self-Supervised_Implicit_Glyph_Attention_for_Text_Recognition_CVPR_2023_paper.pdf) 
 or [Poster](SIGA_poster.pdf) or [中文解读](https://www.techbeat.net/article-info?id=5152).
 
+If you have any questions please contact me by email (gtk0615@sjtu.edu.cn).
+
 ## Pipeline 
 ![examples](graph/Essentialdifference.png)
 
@@ -53,6 +55,8 @@ pip install Pillow LMDB nltk six natsort scipy
     ![examples](graph/ArbitText.png)
 - **weight link:**
   - [SIGA<sub>R</sub>](https://drive.google.com/file/d/1Nulplr3LnMzJ1AgG5pkCyUCUeqddR0_P/view?usp=drive_link) *The model is trained on V100 platform*.
+  - [SIGA<sub>S</sub>](https://drive.google.com/file/d/1o1trg0yQWVmycEuFqa4IsKLOrPJP1TbN/view?usp=drive_link) *The model is trained on 3090 platform*.
+  - [SIGA<sub>T</sub>](https://drive.google.com/file/d/14wCXJg_dLFxDuEnVBpJH5MRzLh_U9meK/view?usp=drive_link) *The model is trained on 3090 platform*.
 
 ## Mask preparation
   - optional, K-means results (please refer to [CCD](https://github.com/TongkunGuan/CCD/tree/main/mask_create))
@@ -80,7 +84,6 @@ python test.py --eval_data /xxx/xxx --select_data xxx
 ![examples1](graph/b.png)
 
 ### TODO
-- [ ] Release SIGA_T code
 - [ ] Refactor and clean code
 
 ## Citation
