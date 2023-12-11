@@ -51,7 +51,7 @@ pip install Pillow LMDB nltk six natsort scipy
 
 ## Highlights
 - **Dataset link:**
-  - [Synth data and benchmark](https://github.com/FangShancheng/ABINet/README.md)
+  - [Synth data and benchmark](https://github.com/FangShancheng/ABINet)
   - [MPSC](https://drive.google.com/file/d/1awBUrj30s5VLxk-B0EFkieeIcNrETVTX/view?usp=drive_link)
     ![examples](graph/MPSC.png)
   - [ArbitText](https://drive.google.com/file/d/1D-pN5u0KOm79Ot51jh-9_rEdSt9oK_vK/view?usp=drive_link)
