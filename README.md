@@ -79,13 +79,6 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 t
 python test.py --eval_data /xxx/xxx --select_data xxx
 ```
 
-## Visualization
-![Pipeline](graph/pipeline.png)
-![examples1](graph/h.png)
-![examples1](graph/r.png)
-![examples1](graph/c.png)
-![examples1](graph/b.png)
-
 ### TODO
 - [ ] Refactor and clean code
 
