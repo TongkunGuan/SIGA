@@ -8,11 +8,11 @@ We also released ICCV23 work on scene text recognition:
 [Paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Guan_Self-Supervised_Character-to-Character_Distillation_for_Text_Recognition_ICCV_2023_paper.pdf) and [Code](https://github.com/TongkunGuan/CCD)
 
 
-## Pipeline 
+<!-- ## Pipeline 
 ![examples](graph/Essentialdifference.png)
 
 ## Model architecture
-![examples](graph/Network.png)
+![examples](graph/Network.png) -->
 
 ## Environments
 ```bash
